@@ -5,7 +5,7 @@ import { List, ListItem, ListText } from './contactList.styled';
 
 function ContactList({ contacts, onDeleteContact }) {
   return (
-    <List start="1">
+    <List>
       {contacts.map(({ id, name, number }) => (
         <ListItem key={id}>
           <ListText>
